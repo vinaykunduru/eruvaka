@@ -1,0 +1,45 @@
+.spclIndication {
+  position: absolute;
+  color: #fff;
+  font-size: 9px;
+  padding: 0 8px;
+  border-radius: 50px;
+  top: 50%;
+  line-height: 18px;
+  background: green;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: -5px;
+  margin-top: -14px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.nav-item {
+  position: relative;
+}
+
+#home figure {
+  position: relative;
+}
+#home figurecaption {
+  position: absolute;
+  bottom: 50px;
+
+  left: 50px;
+  right: 0;
+  z-index: 999;
+  text-align: left;
+}
+#home figurecaption h2 {
+  color: #fff;
+}
+#home .overlay a {
+  display: inline-block;
+  font-size: 12px;
+}
