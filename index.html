@@ -19,7 +19,38 @@
     />
 
     <link rel="stylesheet" href="./assets/css/custom.css" />
-    <style></style>
+    <style>
+      .bgPattern {
+        background-image: url(/assets/img/pattern-bg.jpg);
+        background-position: center;
+        background-repeat: repeat;
+      }
+
+      .swiper-controls
+        .swiper-pagination
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        border-color: orange;
+      }
+      .swiper-controls .swiper-pagination .swiper-pagination-bullet {
+        background: green;
+      }
+      h1,
+      h2 {
+        color: green;
+      }
+      h2.dividerHead {
+        position: relative;
+      }
+      /* h2.dividerHead::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 16px;
+        background-image: url(assets/img/divider.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      } */
+    </style>
   </head>
 
   <body>
@@ -157,7 +188,7 @@
                     data-bs-target="#offcanvas-cart"
                   >
                     <i class="uil uil-shopping-cart"></i>
-                    <span class="badge badge-cart bg-primary">3</span>
+                    <span class="badge badge-cart bg-maroon">3</span>
                   </a>
                 </li>
                 <li class="nav-item d-lg-none">
@@ -460,11 +491,11 @@
         </div>
       </section>
 
-      <section class="wrapper bg-light">
+      <section class="wrapper">
         <div class="container py-14 py-md-16">
           <div class="row align-items-center mb-10 position-relative zindex-1">
             <div class="col-md-8 col-lg-9 col-xl-8 col-xxl-7 pe-xl-20">
-              <h2 class="display-6">New Arrivals</h2>
+              <h2 class="display-6 dividerHead">New Arrivals</h2>
               <nav class="d-inline-block" aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -869,7 +900,7 @@
       <!-- /section -->
 
       <section class="wrapper bg-gray">
-        <div class="container pt-10">
+        <div class="container pt-10 pb-10">
           <div
             class="swiper-container blog grid-view mb-16"
             data-margin="30"
@@ -996,7 +1027,7 @@
           <!-- /.swiper-container -->
         </div>
       </section>
-      <section class="wrapper bg-light">
+      <section class="wrapper bg-light bgPattern">
         <div class="container py-14 py-md-16">
           <h2 class="display-4 mb-3 text-center">Happy Customers</h2>
           <p class="lead text-center mb-6 px-md-16 px-lg-0">
@@ -1229,7 +1260,7 @@
       </section>
       <!-- /section -->
 
-      <section class="ftco-section wrapper bg-gray">
+      <section class="ftco-section wrapper">
         <div class="container pt-10 pb-10">
           <div class="row no-gutters ftco-services">
             <div
